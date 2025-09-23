@@ -14,7 +14,7 @@ const openReadmeInEditor = () => fetch('/__open-in-editor?file=README.md')
     <template #icon>
       <DocumentationIcon />
     </template>
-    <template #heading>Documentation Dawg</template>
+    <template #heading>Documentation</template>
 
     Vue’s
     <a href="https://vuejs.org/" target="_blank" rel="noopener">official documentation</a>
@@ -92,6 +92,4 @@ const openReadmeInEditor = () => fetch('/__open-in-editor?file=README.md')
     us by
     <a href="https://vuejs.org/sponsor/" target="_blank" rel="noopener">becoming a sponsor</a>.
   </WelcomeItem>
-WelcomeItem
-  <WelcomeItem> Test Dawg</WelcomeItem>
 </template>
