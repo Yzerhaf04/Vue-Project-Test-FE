@@ -1,0 +1,20 @@
+services:
+  # The service for your Vue.js app in development
+  app-dev:
+    # Build the image using the Dockerfile.dev
+    build:
+      context: .
+      dockerfile: Dockerfile
+    # Name the container
+    container_name: my-vue-app-dev
+    # Map port 5173 on your local machine to port 5173 in the container
+    # This allows you to access the dev server from your browser
+    ports:
+      - "5173:5173"
+    # Mount the local source code into the container's /app directory
+    # This is the key to live-reloading
+    volumes:
+      # Mounts the entire project directory, but ignores node_modules
+      - .:/app
+      - /app/node_modules
+    command: npm run dev
