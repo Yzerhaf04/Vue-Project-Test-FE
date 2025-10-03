@@ -1,0 +1,3 @@
+[submodule "magang-backend-test"]
+	path = magang-backend-test
+	url = https://github.com/Yzerhaf04/magang-backend-test.git
